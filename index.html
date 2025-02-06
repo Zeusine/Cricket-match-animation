@@ -11,13 +11,14 @@
         .bat{
             width: 500px;
             height: 500px;
+            transition: transform .1s ;
         }
         .field:hover .bat{
             transform: rotate(-40deg);
             
         }
         .field:hover .ball{
-            transform: translate(753px, -150px);
+            transform: translate(1400px, -150px);
         }
         .ball{
             position: relative;
@@ -26,10 +27,15 @@
             background-color: red;
             border-radius: 50px;
             transform: translate(253px, -150px);
+            transition: transform .1s;
+        }
+        h1{
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <h1>Ball Bat Experiment with Transition and Transform</h1>
     <div class="field">
         <img class="bat" src="bat.png" alt="">
         <div class="ball"></div>
