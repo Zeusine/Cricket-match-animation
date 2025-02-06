@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket match animation transform, translate, transition</title>
+    <style>
+        .field{
+            border: 2px solid grey;
+        }
+        .bat{
+            width: 500px;
+            height: 500px;
+        }
+        .field:hover .bat{
+            transform: rotate(-40deg);
+            
+        }
+        .field:hover .ball{
+            transform: translate(753px, -150px);
+        }
+        .ball{
+            position: relative;
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            border-radius: 50px;
+            transform: translate(253px, -150px);
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+    
+    
+</body>
+</html>
